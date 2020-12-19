@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "We all wait for summer"
-categories: [ Jekyll, tutorial ]
+title:  "Elektrik İşleri"
+categories: [ Hizmetlerimiz ]
 image: assets/images/1.jpg
 featured: true
 ---
