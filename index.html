@@ -8,35 +8,11 @@ title: Home
 <section class="intro full-width">
     <div class="wrapintro">
         <h1>Kadir Elektrik Muhendislik</h1>
-        <h2 class="lead"></h2>    
-        <!-- <a href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip" class="btn">Download</a> -->
+        <h2 class="lead">Her türlü Elektrik işleri yapılır. Her sektör için elektrik çalışması yapmaktayız. İletişime geçip, hemen fiyat teklifi alabilirsiniz!</h2>    
+        <a href="#" class="btn">Bize ulaşın</a>
     </div>
 </section>
 
-
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
-    </div>
-
-    <div class="row listfeaturedtag">
-
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
-    </div>
-
-</section>
 
 <!-- Posts Index
 ================================================== -->
@@ -46,34 +22,36 @@ title: Home
 {% endif %}
 {% endif %}    
 
-<section class="recent-posts row">
-
-    <div class="col-sm-4">
-        {% include sidebar.html %}
+<section>
+    <div class="section-title">
+        <h2><span>Hakkımızda</span></h2>
     </div>
 
-    <div class="col-sm-8">
+    <div class="col-sm-12 card-text">
+        Akaryakıt istasyonu elektrik işleri , İşyeri, Ofis Saha aydınlatma , İstasyon dağıtım kumanda panoları , Paratöner tesisatı yapımı , Kadvel kaynak işleri , Kompanzasyon işleri Teknolojik yatırımlarla sürekli desteklenen güvenli ve kaliteli ürün yapısını geliştirerek, yenilikçi, yaratıcı ve küresel trendlere uyan özgün ürün tasarımları ve hizmetleri ile koşulsuz müşteri memnuniyetini sağlamayı hedefleyen;Yaptığımız her işte iş ve işçi emniyeti, çevreye saygı, kaliteden ödün vermeden ekonomik, hızlı ve teknolojik çözümler üretmek öncelikli hedefimizdir.
+    </div>
+
+</section>
+<section class="recent-posts row">
+
+    <div class="col-sm-12">
 
         <div class="section-title">
-            <h2><span>All Stories</span></h2>    
+            <h2><span>Hizmetlerimiz</span></h2>    
         </div>
 
         <div class="masonrygrid row listrecent">
 
             {% for post in paginator.posts %}
 
-            {% unless post.featured == true %}
-
-                {% include postbox.html %}
-
-            {% endunless %}
+            {% include postbox.html %}
 
             {% endfor %}
 
         </div> 
 
         <!-- Pagination -->
-        <div class="bottompagination">
+        <div class="bottompagination" style="display: none;">
 
             <span class="navigation" role="navigation">
 

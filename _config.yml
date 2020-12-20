@@ -48,6 +48,7 @@ jekyll-archives:
     category: '/category/:name/'
     
 permalink: /:categories/:title.html
+paginate: 6
 
 # Other
 markdown: kramdown

@@ -125,9 +125,12 @@
 
     <!-- Before Footer
     ================================================== --> 
-    <div class="beforefooter">
+    <div>
         <div class="container">
-            <div class="row justify-content-center">
+            <h2 class="section-title"><span>Aktif çalışmalarımız</span></h2>   
+        </div>
+        <div id="instagram-feed1" class="container">
+            <div class="row justify-content-center" style="display: none;">
                 <div class="col-md-8">
                     <h3>This is your final call to action area. Shine like a star, make them want you, tell 'em to push that button!</h3>
                     <p>We offer a <span>30 Day Money Back Guarantee</span>, so joining is <span class="risk-free">Risk-Free!</span></p>
@@ -135,7 +138,7 @@
                 </div>
                 <div class="col-md-4 text-right footersocial">
                     <h5>Connect with Us</h5>
-                    <i class="fa fa-facebook"></i>
+                    <a href="https://www.facebook.com/KAD%C4%B0R-Elektirk-M%C3%BChendislik-2699624470062884"><i class="fa fa-facebook"></i></a>
                     <i class="fa fa-twitter"></i>
                         <i class="fa fa-google"></i>
                      <i class="fa fa-pinterest"></i>
@@ -229,6 +232,28 @@
 <script type='text/javascript' src='{{ site.baseurl }}/assets/js/masonry.pkgd.min.js'></script>
     
 <script src="{{ site.baseurl }}/assets/js/theme.js"></script>    
+
+<script src="{{ site.baseurl }}/assets/js/InstagramFeed.min.js"></script>    
+
+<script>
+    (function(){
+        new InstagramFeed({
+            'username': 'kadirelektrikmuhendislik',
+            'container': document.getElementById("instagram-feed1"),
+            'display_profile': false,
+            'display_biography': false,
+            'display_gallery': true,
+            'display_captions': true,
+            'callback': null,
+            'styling': true,
+            'items': 12,
+            'items_per_row': 6,
+            'margin': 0.5,
+            'lazy_load': true,
+            'on_error': console.error
+        });
+    })();
+</script>
     
 </body>
     
