@@ -74,16 +74,16 @@
                 </li> 
                 
                 <li class="nav-item">                
-                    <a class="nav-link" href="{{ site.baseurl }}/contact">Referanslar</a>
+                    <a class="nav-link" href="{{ site.baseurl }}/references">Referanslar</a>
                 </li> 
                 
                  <li class="nav-item">                
-                    <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/affiliates-jekyll-theme">Galeri</a>
+                    <a class="nav-link" href="{{ site.baseurl }}/gallery">Galeri</a>
                 </li> 
                 
                 
                 <li class="nav-item">                
-                    <a class="nav-link highlight" href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip">İletişim</a>
+                    <a class="nav-link highlight" href="{{ site.baseurl }}/concat">İletişim</a>
                 </li> 
                 
             </ul>
@@ -125,28 +125,16 @@
 
     <!-- Before Footer
     ================================================== --> 
+    {% if page.url != '/gallery' %}
     <div>
         <div class="container">
             <h2 class="section-title"><span>Aktif çalışmalarımız</span></h2>   
         </div>
         <div id="instagram-feed1" class="container">
-            <div class="row justify-content-center" style="display: none;">
-                <div class="col-md-8">
-                    <h3>This is your final call to action area. Shine like a star, make them want you, tell 'em to push that button!</h3>
-                    <p>We offer a <span>30 Day Money Back Guarantee</span>, so joining is <span class="risk-free">Risk-Free!</span></p>
-                    <a class="btn btn-primary btn-lg" href="#">Join us yesterday</a>
-                </div>
-                <div class="col-md-4 text-right footersocial">
-                    <h5>Connect with Us</h5>
-                    <a href="https://www.facebook.com/KAD%C4%B0R-Elektirk-M%C3%BChendislik-2699624470062884"><i class="fa fa-facebook"></i></a>
-                    <i class="fa fa-twitter"></i>
-                        <i class="fa fa-google"></i>
-                     <i class="fa fa-pinterest"></i>
-                     <i class="fa fa-github"></i>
-                </div>
-            </div>
+            Yükleniyor...
         </div>
     </div>
+    {% endif %}
 
     <!-- Begin Footer
     ================================================== -->
@@ -233,8 +221,8 @@
     
 <script src="{{ site.baseurl }}/assets/js/theme.js"></script>    
 
+{% if page.url != '/gallery' %}
 <script src="{{ site.baseurl }}/assets/js/InstagramFeed.min.js"></script>    
-
 <script>
     (function(){
         new InstagramFeed({
@@ -254,7 +242,8 @@
         });
     })();
 </script>
-    
+{% endif %}
+
 </body>
     
 </html>
